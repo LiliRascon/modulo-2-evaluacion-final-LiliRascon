@@ -1,0 +1,50 @@
+.wrapper{
+  width: 100%;
+  height: 3000px;
+  background-color: black;
+}
+.page__main{
+  .textSerieExist{
+    display: flex;
+    flex-direction: column;
+    .textSerieExist{
+      font-family: $primaryFont;
+      color: red;
+      font-size: 20px;
+    }
+  
+  }
+  .backFav{
+    background-color: red;
+  }
+  .containerFirst {
+    border-top: solid 2px;
+    border-color: grey;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;    
+    height: 80%;
+    .hero {
+      width: 60%;
+      .textOneHero{
+
+    @include styleText
+      }
+      .listSerie{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      
+    }
+    .containerAside{
+      width: 40%;
+      .textTwoHero{
+        @include styleText;
+      }
+      
+    }
+  }
+}
+
